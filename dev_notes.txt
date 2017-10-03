@@ -6,4 +6,5 @@ ember g controller model-groups
 ember g controller model-groups/new
 ember g controller model-groups/edit
 
+
 ember g controller model-group
