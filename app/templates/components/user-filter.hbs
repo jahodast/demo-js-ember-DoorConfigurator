@@ -1,0 +1,11 @@
+<div class="well">
+	<h2>User filter</h2>
+	<div class="form-group">
+		<label>Name:</label>
+		{{input key-up=(action "filterListOfUsers") type="text" value=firstName class="form-control" placeholder="Enter first name"}}
+	</div>
+</div>
+
+{{yield filteredUsers}}
+
+<button {{action "newTest"}}>Click me</button>

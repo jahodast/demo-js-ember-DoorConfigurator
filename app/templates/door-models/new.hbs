@@ -1,0 +1,23 @@
+<h1>New door model</h1>
+<form>
+	<div class="form-group">
+		<label>Label</label>
+		{{input type="text" class="form-control" value=label placeholder="Add door model..."}}
+	</div>
+	<div class="form-group">
+		<label>Description</label>
+		{{textarea class="form-control" value=description placeholder="Describe door model..."}}
+	</div>
+	<div class="form-group">
+		<label>Model group</label>
+		<select class="form-control" value="-Kkqv4-ufELHDB3WXSZs">
+			<option value="">select an option</option>
+			{{#each model as |model-group|}}
+				<option value={{model-group.id}}>
+					{{model-group.label}}
+				</option>
+			{{/each}}
+		</select>
+	</div>
+	<button {{action 'addDoorModel'}} class="btn btn-primary">Submit</button>
+</form>

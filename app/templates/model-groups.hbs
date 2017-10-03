@@ -1,0 +1,14 @@
+{{outlet}}
+<h1>Model groups</h1>
+<p>Data are not link to configurator, these are just for CRUD app tutorial. Data are stored/edited just in Firebase database.</p>
+<p>
+	<span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> {{#link-to 'model-groups.new'}} New model group{{/link-to}}
+</p>
+
+{{#each model as |model-group|}}
+	<div class="well">
+	  <h4>{{#link-to "model-groups.edit" model-group.id}}{{model-group.label}}{{/link-to}}</h4>
+	  <p>{{model-group.description}}</p>
+	  <button {{action 'deleteModelGroup' model-group.id}} class="btn btn-danger">Delete</button>
+	 </div>
+{{/each}}

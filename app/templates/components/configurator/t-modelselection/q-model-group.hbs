@@ -1,0 +1,17 @@
+<div class="form-group">
+  
+  <label for="model-group">{{modelGroup.question}}</label>
+  <a href="#" data-toggle="tooltip" title="{{modelGroup.tooltip}}">
+  	<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a>
+  
+  <select class="form-control" id="model-group" onchange={{action "setValue" value='target.value'}} >
+	<option value="" >{{modelGroup.placeholder}}</option>
+	{{#each modelGroup.options as |mg|}}
+    	<option value={{mg.id}}>{{mg.label}}</option>
+    {{/each}}
+  </select>
+
+</div>
+
+
+{{yield}}

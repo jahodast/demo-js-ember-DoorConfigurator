@@ -1,0 +1,12 @@
+<h1>New model group</h1>
+<form>
+	<div class="form-group">
+		<label>Label</label>
+		{{input type="text" class="form-control" value=label placeholder="Add model group..."}}
+	</div>
+	<div class="form-group">
+		<label>Description</label>
+		{{textarea class="form-control" value=description placeholder="Describe model group..."}}
+	</div>
+	<button {{action 'addModelGroup'}} class="btn btn-primary">Submit</button>
+</form>

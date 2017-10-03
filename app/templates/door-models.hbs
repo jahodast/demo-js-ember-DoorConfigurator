@@ -1,0 +1,15 @@
+{{outlet}}
+<h1>Door models</h1>
+<p>Data are not link to configurator, these are just for CRUD app tutorial. Data are stored/edited just in Firebase database.</p>
+<p>
+	<span class="glyphicon glyphicon-plus-sign" aria-hidden="true"></span> {{#link-to 'door-models.new'}} New door model{{/link-to}}
+</p>
+
+{{#each model as |door-model|}}
+	<div class="well">
+	  <h4>{{#link-to "door-models.edit" door-model.id}}{{door-model.label}}{{/link-to}}</h4>
+	  <p>{{door-model.description}}</p>
+	  <button {{action 'deleteDoorModel' door-model.id}} class="btn btn-danger">Delete</button>
+	 </div>
+{{/each}}
+

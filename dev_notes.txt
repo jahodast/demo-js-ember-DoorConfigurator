@@ -1,0 +1,9 @@
+ember g route model-groups
+ember g route model-groups/new
+ember g route model-groups/edit - add path _id to route.js
+
+ember g controller model-groups
+ember g controller model-groups/new
+ember g controller model-groups/edit
+
+ember g controller model-group

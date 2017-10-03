@@ -1,0 +1,12 @@
+<h1>Edit door model</h1>
+<form>
+	<div class="form-group">
+		<label>Label</label>
+		{{input type="text" class="form-control" value=model.label placeholder="Add door model..."}}
+	</div>
+	<div class="form-group">
+		<label>Description</label>
+		{{textarea class="form-control" value=model.description placeholder="Describe door model..."}}
+	</div>
+	<button {{action 'editDoorModel' model.id}} class="btn btn-primary">Submit</button>
+</form>

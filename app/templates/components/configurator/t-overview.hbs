@@ -1,0 +1,102 @@
+{{#if doorModel.label}}
+	<div class="row">
+		<div class="col-md-4 text-center">
+			<img src={{doorModel.imagePath}} style="height:150px;" >
+		</div>
+		<div class="col-md-8 text-left">
+			<label>{{doorModel.label}}</label>
+			<p>{{doorModel.description}}</p>
+			{{#if doorModel.promoted}}
+				<p>
+					<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+					{{doorModel.descriptionCommon}}
+				</p>
+			{{/if}}
+		</div>
+	</div>
+
+	<hr />
+
+		<div class="row">
+			<div class="col-sm-8">
+				<label>{{doorModel.questionShort}}</label>
+			</div>
+			<div class="col-sm-4 text-right">
+				{{doorModel.price}}  €
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				{{doorModel.label}}
+			</div>
+		</div>
+	
+
+
+	{{#if timber.label}}
+		<div class="row">
+			<div class="col-sm-8">
+				<label>{{timber.questionShort}}</label>
+			</div>
+			<div class="col-sm-4 text-right">
+				{{timber.price}}  €
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				{{timber.label}}
+			</div>
+		</div>
+	{{/if}}
+
+
+	{{#if glass.label}}
+		<div class="row">
+			<div class="col-sm-8">
+				<label>{{glass.questionShort}}</label>
+			</div>
+			<div class="col-sm-4 text-right">
+				{{glass.price}}  €
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				{{glass.label}}
+			</div>
+		</div>
+	{{/if}}
+
+
+	{{#if postbox.label}}
+		<div class="row">
+			<div class="col-sm-8">
+				<label>{{postbox.questionShort}}</label>
+			</div>
+			<div class="col-sm-4 text-right">
+				{{postbox.price}}  €
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-12">
+				{{postbox.label}}
+			</div>
+		</div>
+	{{/if}}
+
+{{else}}
+	<span style="color: grey"><i>No door model selected</i></span>
+{{/if}}
+
+
+<hr />
+	<div class="row" style="color: green">
+		<div class="col-sm-8">
+			<label>Total</label>
+		</div>
+		<div class="col-sm-4 text-right">
+			<b>{{sumPrice}} €</b>
+		</div>
+	</div>
+	
+
+{{yield}}

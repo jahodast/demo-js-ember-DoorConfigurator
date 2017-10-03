@@ -1,0 +1,88 @@
+<h1>Configurator</h1>
+<br />
+
+<!--
+<ul class="nav nav-tabs">
+  <li class="active"><a data-toggle="tab" href="#modelselection">Modelselection</a></li>
+  <li><a data-toggle="tab" href="#accessories">Accessories</a></li>
+  <li><a data-toggle="tab" href="#overview">Overview</a></li>
+</ul>
+
+<div class="tab-content">
+	<div id="modelselection" class="tab-pane fade in active">
+  		{{configurator/t-modelselection}}
+  	</div>
+  	<div id="accessories" class="tab-pane fade">
+  		{{configurator/t-accessories}}
+  	</div>
+  	<div id="overview" class="tab-pane fade">
+  		{{configurator/t-overview}}
+  	</div>
+</div>
+-->
+
+
+  
+  <div class="row">
+    <div class="col-sm-8" >
+
+              <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                      Modelselection</a>
+                    </h4>
+                  </div>
+                  <div id="collapse1" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      {{configurator/t-modelselection}}
+                    </div>
+                  </div>
+                </div>
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                      Accessories</a>
+                    </h4>
+                  </div>
+                  <div id="collapse2" class="panel-collapse collapse">
+                    <div class="panel-body">
+                      {{configurator/t-accessories}}
+                    </div>
+                  </div>
+                </div>
+                
+              </div>
+
+    </div>
+    <div class="col-sm-4">
+      
+              
+              <div class="panel-group" id="accordion2">
+                <div class="panel panel-default">
+                  <div class="panel-heading">
+                    <h4 class="panel-title">
+                      <a data-toggle="collapse" data-parent="#accordion2" href="#collapse23">
+                      Overview</a>
+                    </h4>
+                  </div>
+                  <div id="collapse23" class="panel-collapse collapse in">
+                    <div class="panel-body">
+                      {{configurator/t-overview}}
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+
+    </div>
+  </div>
+
+
+
+
+
+{{outlet}}

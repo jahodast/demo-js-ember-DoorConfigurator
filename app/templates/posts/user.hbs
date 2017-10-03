@@ -1,0 +1,7 @@
+<h1>The author's posts</h1>
+{{#each posts as |post|}}
+	<p><b>{{#link-to "posts.show" post.id}}{{post.title}}{{/link-to}}</b></p>
+	<p>{{post.body}}</p>
+	<p>By: {{#link-to "posts.user" post.user.id}}{{post.user.name}}{{/link-to}}</p>
+	<hr />
+{{/each}}

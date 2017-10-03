@@ -1,0 +1,15 @@
+<div class="form-group">
+  <label for="door-model">{{doorModel.question}}</label>
+  <a href="#" data-toggle="tooltip" title="{{doorModel.tooltip}}">
+  	<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a>
+  <select class="form-control" id="door-model" onchange={{action "setValue" value='target.value'}} >
+	<option value='' >{{doorModel.placeholder}}</option>
+	{{#each doorModel.options as |doorModel|}}
+    	<option value={{doorModel.id}}>{{doorModel.label}} (+{{doorModel.price}} €) </option>
+    {{/each}}
+  </select>
+</div>
+
+
+
+{{yield}}

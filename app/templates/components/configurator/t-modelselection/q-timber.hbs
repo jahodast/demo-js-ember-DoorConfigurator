@@ -1,0 +1,13 @@
+<div class="form-group">
+  <label for="model-group">{{timber.question}}</label>
+  <a href="#" data-toggle="tooltip" title="{{timber.tooltip}}">
+  	<span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a>
+  	{{#each timber.options as |timber|}}
+		<div class="radio">
+			<label><input type="radio" name="timber" value={{timber.id}} onclick={{action "setValue" value='target.value'}}>{{timber.label}} (+{{timber.price}} €)</label>
+		</div>
+    {{/each}}
+</div>
+
+
+{{yield}}
