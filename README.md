@@ -1,6 +1,6 @@
 # emtask
 
-https://ember-configurator.herokuapp.com/
+live demo: https://ember-configurator.herokuapp.com/
 
 This README outlines the details of collaborating on this Ember application.
 A short introduction of this app could easily go here.
